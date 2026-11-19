@@ -1,23 +1,34 @@
+
 import React from "react";
+
 import {
   BrowserRouter,
   Routes,
   Route,
   Navigate
 } from "react-router-dom";
+
+// Components
 import NavBar from "./components/Navbar.jsx";
-import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import Recipes from "./pages/Recipes";
-import RecipeDetail from "./pages/RecipeDetail";
-import Favourites from "./pages/Favourites";
-import { FavouriteProvider } from "./context/FavouriteContext";
+import Footer from "./components/footer.jsx";
+
+// Pages
+import Home from "./pages/Home.jsx";
+import Recipes from "./pages/Recipes.jsx";
+import RecipeDetail from "./pages/RecipeDetail.jsx";
+import Favourites from "./pages/Favourites.jsx";
+
+// Context
+import { FavouriteProvider } from "./context/FavouriteContext.jsx";
+
+// Styles
 import "./styles/App.css";
 import "./styles/home.css";
 import "./styles/Navbar.css";
 import "./styles/Pages.css";
 import "./styles/RecipeCard.css";
 import "./styles/Responsive.css";
+
 function App() {
   return (
     <FavouriteProvider>
@@ -28,7 +39,6 @@ function App() {
         }}
       >
         <div className="app">
-
           <NavBar />
 
           <main>
@@ -55,10 +65,10 @@ function App() {
           </main>
 
           <Footer />
-
         </div>
       </BrowserRouter>
     </FavouriteProvider>
   );
 }
+
 export default App;
