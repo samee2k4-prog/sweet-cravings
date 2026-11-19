@@ -1,0 +1,175 @@
+@media (max-width: 1000px) {
+  .recipes-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .hero-section {
+    gap: 30px;
+  }
+
+  .hero-image {
+    height: 350px;
+  }
+
+  .home-banner {
+    margin: 50px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+
+  .navbar-links {
+    gap: 18px;
+  }
+
+  .hero-section {
+    grid-template-columns: 1fr;
+    padding: 50px 25px;
+  }
+
+  .hero-image {
+    height: 350px;
+    border-radius: 12px 65px 12px 12px;
+  }
+
+  .featured-section {
+    padding: 55px 25px;
+  }
+
+  .recipes-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .section-heading h2 {
+    font-size: 32px;
+  }
+
+  .home-banner {
+    padding: 35px;
+  }
+
+  .recipe-detail {
+    grid-template-columns: 1fr;
+    margin: 30px 20px;
+  }
+
+  .recipe-detail img {
+    height: 350px;
+  }
+}
+@media (max-width: 550px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .navbar-logo {
+    font-size: 23px;
+  }
+
+  .navbar-links {
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .navbar-links a {
+    font-size: 13px;
+  }
+
+  .hero-section {
+    padding: 40px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 39px;
+  }
+
+  .hero-image {
+    height: 270px;
+  }
+
+  .featured-section {
+    padding: 45px 18px;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .section-heading h2 {
+    font-size: 30px;
+  }
+
+  .recipes-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .recipe-card-image {
+    height: 250px;
+  }
+
+  .recipe-card-content h3 {
+    min-height: auto;
+  }
+
+  .home-banner {
+    margin: 35px 18px;
+    padding: 28px 22px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .home-banner h2 {
+    font-size: 27px;
+  }
+
+  .page-container {
+    padding: 40px 18px;
+  }
+
+  .page-heading h1 {
+    font-size: 36px;
+  }
+
+  .search-form {
+    flex-direction: column;
+    margin-bottom: 35px;
+  }
+
+  .search-form button {
+    width: 100%;
+  }
+
+  .results-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .favourites-page {
+    padding: 40px 18px;
+  }
+
+  .favourites-page h1 {
+    font-size: 34px;
+  }
+
+  .recipe-detail {
+    padding: 15px;
+    margin: 20px 12px;
+  }
+
+  .recipe-detail img {
+    height: 260px;
+  }
+
+  .recipe-detail h1 {
+    font-size: 29px;
+  }
+}

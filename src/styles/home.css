@@ -1,0 +1,98 @@
+.home-page {
+  width: 100%;
+}
+.hero-section {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 75px 35px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 55px;
+}
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(38px, 5vw, 65px);
+  line-height: 1.15;
+  color: var(--chocolate);
+  margin-bottom: 22px;
+}
+.hero-content h1 span {
+  display: block;
+  color: var(--dark-pink);
+}
+.hero-content > p:not(.section-label) {
+  max-width: 480px;
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+.hero-image {
+  height: 430px;
+  overflow: hidden;
+  border-radius: 12px 100px 12px 12px;
+  box-shadow: var(--shadow);
+}
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.featured-section {
+  padding: 75px 35px;
+  background: #fff3f0;
+}
+.featured-section > * {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+.section-heading h2,
+.home-banner h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  color: var(--chocolate);
+  margin-bottom: 8px;
+}
+.section-heading p:not(.section-label),
+.home-banner p:not(.section-label) {
+  color: var(--text);
+}
+.text-link {
+  color: var(--dark-pink);
+  font-weight: 700;
+  white-space: nowrap;
+}
+.text-link:hover {
+  color: var(--chocolate);
+}
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 25px;
+}
+.home-banner {
+  max-width: 1180px;
+  margin: 75px auto;
+  padding: 50px;
+  background: var(--light-pink);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+.home-banner h2 {
+  font-size: 32px;
+}
+.home-banner .primary-button {
+  flex-shrink: 0;
+}
